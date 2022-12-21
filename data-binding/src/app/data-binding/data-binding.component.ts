@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     `
       .highlight{
         background-color: yellow;
-        front-weight: bold;
+        font-weight: bold;
       }
 
     `
@@ -24,6 +24,13 @@ export class DataBindingComponent {
   valorSalvo = '';
 
   isMouseOver: boolean = false;
+
+  nome: string = 'abc';
+
+  pessoa: any = {
+    nome: 'def',
+    idade: 20
+  }
 
   getValor(){
     return 1
